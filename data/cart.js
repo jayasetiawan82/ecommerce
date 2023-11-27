@@ -1,13 +1,21 @@
-export const cart = [
-  {
-    productId: "shirt22389",
-    quantity: 2,
-  },
-  {
-    productId: "shirt39889",
-    quantity: 3,
-  },
-];
+export let cart = JSON.parse(localStorage.getItem("cart"));
+
+if (!cart) {
+  cart = [
+    {
+      productId: "shirt22389",
+      quantity: 2,
+    },
+    {
+      productId: "shirt39889",
+      quantity: 3,
+    },
+  ];
+}
+
+function saveToLocalStorage() {
+  localStorage.setItem("cart", JSON.stringify(cart));
+}
 
 export function addToCart(productId) {
   let matchingItem;
@@ -31,6 +39,8 @@ export function addToCart(productId) {
       quantity,
     });
   }
+
+  saveToLocalStorage();
 }
 
 export function removeFromCart(productId) {
@@ -40,5 +50,7 @@ export function removeFromCart(productId) {
       newCart.push(cartItem);
     }
   });
-  
+
+  cart = newCart;
+  saveToLocalStorage();
 }

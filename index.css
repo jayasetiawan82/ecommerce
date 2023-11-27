@@ -377,3 +377,7 @@ footer div ul li {
   gap: 4em;
 }
 
+.update-quantity-link, .delete-quantity-link {
+  color: #1f45a4;
+  cursor: pointer;
+}
