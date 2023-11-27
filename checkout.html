@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout page</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body class="inline-padding">
+    <div class="checkout-header">
+      <div class="header-content flex">
+        <h1>
+          Your Cart(
+          <a href="index.html" class="return-to-home-link">3 item</a>)
+        </h1>
+      </div>
+    </div>
+
+    <main>
+      <div>Review your order</div>
+      <div class="checkout-grid flex">
+
+        <!-- cart section -->
+        <div class="order-summary js-order-summary">
+        </div>
+
+        <!-- summary section -->
+        <div class="payment-summary">
+          <div class="payment-samurry-title text-gold capitalized">
+            order summary
+          </div>
+          <div class="payment-summary-row">
+            <div>Items (3)</div>
+            <div class="payment-summary-money">$43.00</div>
+          </div>
+          <div class="payment-summary-row">
+            <div>Shipping and handling</div>
+            <div class="payment-summary-money">$40.30</div>
+          </div>
+          <div class="payment-summary-row">
+            <div>Total before tax</div>
+            <div class="payment-summary-money">$40.20</div>
+          </div>
+          <div class="payment-summary-row">
+            <div>Estimated tax(10%):</div>
+            <div class="payment-summary-money">$40.34</div>
+          </div>
+          <br />
+          <div class="payment-summary-row text-gold">
+            <div>Order total</div>
+            <div class="payment-summary-money">$40.12</div>
+          </div>
+          <button class="place-order-button">place your order</button>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="script/checkout.js"></script>
+  </body>
+</html>
