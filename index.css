@@ -381,3 +381,25 @@ footer div ul li {
   color: #1f45a4;
   cursor: pointer;
 }
+
+
+.quantity-input {
+  max-width: 30px;
+  display: none;
+}
+
+.save-quantity-link {
+  display: none;
+}
+
+.is-editing-quantity .quantity-input {
+  display: initial;
+}
+
+.is-editing-quantity .save-quantity-link {
+  display: initial;
+}
+
+.is-editing-quantity .quantity-label {
+  display: none;
+}
