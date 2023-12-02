@@ -58,6 +58,7 @@ function updateQuantity() {
   const cartQuantity = calculateQuantity()
   document.querySelector(".js-cart-quantity").innerHTML = cartQuantity;
 }
+updateQuantity()
 
 document.querySelector(".js-product-grid").innerHTML = productHTML;
 

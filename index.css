@@ -390,6 +390,7 @@ footer div ul li {
 
 .save-quantity-link {
   display: none;
+  cursor: pointer;
 }
 
 .is-editing-quantity .quantity-input {
