@@ -64,7 +64,7 @@ export function calculateQuantity() {
   return cartQuantity
 }
 
-
+// make quantity on the top page interactive
 export function updateQuantity(productId, newQuantity) {
   let matchingItem;
 
