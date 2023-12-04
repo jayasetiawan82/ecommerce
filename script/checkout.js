@@ -60,7 +60,7 @@ cart.forEach((cartItem) => {
                 <div class="delivery-option-title capitalized">
                   choose a delivery option:
                 </div>
-                ${deliveryOptionHTML(matchingProduct)}
+                ${deliveryOptionHTML(matchingProduct, cartItem)}
                 
               </div>
             </div>
@@ -68,7 +68,7 @@ cart.forEach((cartItem) => {
     `;
 });
 
-function deliveryOptionHTML(matchingProduct) {
+function deliveryOptionHTML(matchingProduct,cartItem) {
 
   let html = ''
   
@@ -79,12 +79,17 @@ function deliveryOptionHTML(matchingProduct) {
     const priceString = deliveryOption.priceCents === 0
     ? 'FREE'
     : `$${formatCurrency(deliveryOption.priceCents)} - `
+    
+    const isChecked = deliveryOption.id === cartItem.deliveryOptionId
+    
 
   html += `
     <div class="delivery-option flex">
       <input
         class="delivery-option-input"
-        type="radio" checked 
+        type="radio" 
+        
+        ${isChecked ? 'checked' : ''}
         name="delivery-option-${matchingProduct.id}"/>
       <div>
         <div class="delivery-option-date capitalized text-gold">
