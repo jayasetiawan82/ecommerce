@@ -5,10 +5,12 @@ if (!cart) {
     {
       productId: "shirt22389",
       quantity: 2,
+      deliveryOptionId: "1"
     },
     {
       productId: "shirt39889",
       quantity: 3,
+      deliveryOptionId: "2"
     },
   ];
 }
@@ -26,6 +28,7 @@ export function addToCart(productId) {
     }
   });
 
+  // quantity selector
   const jsQuantitySelector = document.querySelector(
     `.js-quantity-selector-${productId}`
   );
@@ -37,6 +40,7 @@ export function addToCart(productId) {
     cart.push({
       productId,
       quantity,
+      deliveryOptionId: '1'
     });
   }
 

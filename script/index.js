@@ -79,6 +79,8 @@ document.querySelectorAll(".js-add-to-cart-button").forEach((button) => {
   });
 });
 
+
+
 //********* main idea of javascript************ */
 //1. save the data, 2.generate the HTML, 3. make it interactive
 
