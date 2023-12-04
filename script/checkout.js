@@ -19,12 +19,26 @@ cart.forEach((cartItem) => {
     }
   });
 
+
+  // change delivery option heading 
+  const deliveryOptionId = cartItem.deliveryOptionId
+  let deliveryOption;
+  deliveryOptions.forEach((option) => {
+    if(option.id === deliveryOptionId) {
+      deliveryOption = option
+    }
+  })
+
+  const today = dayjs()
+  const deliveryDate = today.add(deliveryOption.deliveryDays, 'days')
+  const dateString = deliveryDate.format('dddd, MMMM D')
+
   cartSummaryHTML += `
     <div class="cart-item-container js-cart-item-container-${
       matchingProduct.id
     }">
             <div class="delivery-date capitalized text-gold">
-              Delivery Date: Tuesday, june 20
+              Delivery Date: ${dateString}
             </div>
 
             <div class="cart-item-details-grid">
@@ -95,7 +109,7 @@ function deliveryOptionHTML(matchingProduct,cartItem) {
         <div class="delivery-option-date capitalized text-gold">
           ${dateString}
         </div>
-        <div class="delivery-option-price">${priceString}</div>
+        <div class="delivery-option-price">${priceString} shipping</div>
       </div>
     </div>
   `
