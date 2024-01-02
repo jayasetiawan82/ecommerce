@@ -5,7 +5,8 @@
   /* colors */
   --clr-dark: #1a1a1a;
   --clr-light: #f8f9fa;
-  --clr-gold: #d4af37;
+  --clr-green-500: hsla(172, 95%, 18%, 1);
+  --clr-green-600: hsla(171, 15%, 35%, 1);
 
   /* font-size */
   --fs-900: clamp(5rem, 8vw + 1rem, 9.35rem);
@@ -201,8 +202,8 @@ select {
 .bg-light {
   background-color: var(--clr-light);
 }
-.bg-orange {
-  background-color: var(--clr-gold);
+.bg-green {
+  background-color: var(--clr-green);
 }
 
 .text-dark {
@@ -215,8 +216,8 @@ select {
 .text-white {
     color: #ffff;
 }
-.text-gold {
-  color: var(--clr-gold);
+.text-green {
+  color: var(--clr-green);
 }
 
 /* typography */
@@ -277,6 +278,34 @@ select {
 /* ----------------- */
 /* COMPONENTS*/
 /* ----------------- */
+.marque {
+  background-color: hsla(172, 95%, 18%, 1);
+  padding: .3em;
+  overflow: hidden;
+  display: flex;
+  justify-content: end;
+  gap: 1em;
+}
+
+.marque h2 {
+  color: #f8f9fa;
+  font-size: .7em;
+  white-space: nowrap;
+  animation: move-rt1 7000ms linear infinite;
+}
+
+@keyframes move-rt1 {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+/* header */
 
 header {
     justify-content: space-between;
@@ -291,6 +320,55 @@ header {
 .heading {
     text-align: center;
     margin-top: 2em;
+}
+
+nav ul li a {
+  cursor: pointer;
+  color: var(--clr-green-600);
+}
+
+.link{
+  position: relative;
+}
+
+.link:after{
+  content: '';
+  position: absolute;
+  width: 0; height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: black;
+  transition: width .4s ease;
+  -webkit-transition: width .4s ease;
+}
+ 
+.link:hover:after{
+  width: 100%;
+  left: 0;
+  background: black;
+}
+
+
+
+
+.main-banner{
+  background: url(assets/main-banner.svg) no-repeat;
+  width: 100vw;
+  height: 75vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.multi-column {
+  display: flex;
+  justify-content: space-evenly
+}
+
+.multi-column-img-wrapper img {
+max-width:4em;
+margin: 0 auto;
+padding-bottom: 1em;
 }
 
 
@@ -333,9 +411,15 @@ header {
 .added {
   visibility: visible;
 }
+
+
+article {
+  padding: 2em 15em;
+}
+
 /* footer */
 footer {
-    background-color: rgb(0, 16, 158);
+    background-color:hsla(172, 95%, 18%, 1);
     display: flex;
     justify-content: space-around;
     padding: 1em 0;
