@@ -349,7 +349,9 @@ nav ul li a {
   background: black;
 }
 
-
+.right-header {
+  padding-top: 15px;
+}
 
 
 .main-banner{
@@ -392,6 +394,8 @@ padding-bottom: 1em;
   background-color: #1a1a1a;
   color: #f8f9fa;
   border-radius: 50% 50%;
+  position: absolute;
+  margin: 10px 10px;
 }
 
 
@@ -413,8 +417,22 @@ padding-bottom: 1em;
 }
 
 
-article {
-  padding: 2em 15em;
+/* about-us section */
+.about-us-section h1 {
+  text-align: center;
+}
+
+.about-section-wrapper{
+  align-items: center;
+  justify-content: space-around
+}
+
+.about-section-wrapper img {
+  max-width: 60%;
+}
+
+.about-section-wrapper article {
+  max-width: 500px;
 }
 
 /* footer */
