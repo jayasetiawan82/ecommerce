@@ -48,9 +48,9 @@ products.forEach((product) => {
 
                 <div class="product-size-selector">
             </div>
-                <button class="add-to-cart-button js-add-to-cart-button capitalized" data-product-id="${
+                <button class="add-to-cart-button js-add-to-cart-button" data-product-id="${
                   product.id
-                }">add to cart</button>
+                }">add to bag</button>
             </div>
 
     `;

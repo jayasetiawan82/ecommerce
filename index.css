@@ -7,6 +7,7 @@
   --clr-light: #f8f9fa;
   --clr-green-500: hsla(172, 95%, 18%, 1);
   --clr-green-600: hsla(171, 15%, 35%, 1);
+  --clr-brown:#e0b190;
 
   /* font-size */
   --fs-900: clamp(5rem, 8vw + 1rem, 9.35rem);
@@ -203,7 +204,11 @@ select {
   background-color: var(--clr-light);
 }
 .bg-green {
-  background-color: var(--clr-green);
+  background-color: var(--clr-green-500);
+}
+
+.bg-brown {
+  background-color: var(--clr-brown);
 }
 
 .text-dark {
@@ -382,11 +387,15 @@ padding-bottom: 1em;
 
 .add-to-cart-button {
     border: none;
-    padding: .5em;
+    padding: .7em;
     border-radius: 5px;
-    background-color: #1a1a1a;
+    background-color: var(--clr-green-500);
+    text-transform: uppercase;
     color: #ffff;
     margin-top: 10px;
+    border-radius: 30px;
+    font-size: .7em;
+    cursor: pointer;
 }
 
 .cart-wrapper {
@@ -509,4 +518,17 @@ footer div ul li {
 
 .logo {
   max-width: 5em;
+}
+
+.banner {
+  display: flex;
+}
+
+.banner .banner-content {
+  padding: 2em;
+}
+
+select {
+  background-color: transparent;
+  border-radius: 5px;
 }
