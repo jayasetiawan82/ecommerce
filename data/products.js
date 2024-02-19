@@ -50,5 +50,25 @@ export const products = [{
   },
   priceCents: 6050,
   keywords: ["shirt", "G'day"]
+}, { 
+  id: "45576799909",
+  image:"assets/bracelet-5.jpg",
+  name: "You Beuaty",
+  rating: {
+      stars: 5,
+      count: 80
+  },
+  priceCents: 6050,
+  keywords: ["shirt", "G'day"]
+}, { 
+  id: "45576799909",
+  image:"assets/bracelet-6.jpg",
+  name: "You Beuaty",
+  rating: {
+      stars: 5,
+      count: 80
+  },
+  priceCents: 6050,
+  keywords: ["shirt", "G'day"]
 }
 ]
