@@ -13,17 +13,17 @@ export function getProduct(productId) {
 export const products = [{
   id: "shirt22389",
   image:"assets/bracelet-2.jpg",
-  name: "G'day shirt",
+  name: "Allure Bracelet one",
   rating: {
       stars: 4,
       count: 127
   },
-  priceCents: 5050,
+  priceCents: 7000,
   keywords: ["shirt", "G'day"]
 }, {
   id: "shirt39889",
   image:"assets/bracelet-3.jpg",
-  name: "Australia shirt",
+  name: "Allure Bracelet two",
   rating: {
       stars: 5,
       count: 80
@@ -32,41 +32,41 @@ export const products = [{
   keywords: ["shirt", "G'day"]
 }, {
   id: "455767",
-  image:"assets/bracelet-4.jpg",
-  name: "Adelaide shirt",
+  image:"assets/Twist-Leather-Bracelet.jpg",
+  name: "Allure Bracelet Three",
   rating: {
       stars: 5,
-      count: 80
+      count: 85
   },
   priceCents: 6050,
   keywords: ["shirt", "G'day"]
 }, {
   id: "45576799909",
   image:"assets/bracelet-5.jpg",
-  name: "You Beuaty",
+  name: "Allure Bracelet Four",
   rating: {
       stars: 5,
-      count: 80
+      count: 30
   },
-  priceCents: 6050,
+  priceCents: 9050,
   keywords: ["shirt", "G'day"]
 }, { 
   id: "45576799909",
-  image:"assets/Twist-Leather-Bracelet.jpg",
-  name: "You Beuaty",
+  image:"assets/bracelet-4.jpg",
+  name: "Allure Bracelet Five",
   rating: {
       stars: 5,
-      count: 80
+      count: 90
   },
   priceCents: 6050,
   keywords: ["shirt", "G'day"]
 }, { 
   id: "45576799909",
   image:"assets/bracelet-6.jpg",
-  name: "You Beuaty",
+  name: "Allure Bracelet Six",
   rating: {
       stars: 5,
-      count: 80
+      count: 60
   },
   priceCents: 6050,
   keywords: ["shirt", "G'day"]

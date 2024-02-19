@@ -506,3 +506,7 @@ footer div ul li {
 .is-editing-quantity .quantity-label {
   display: none;
 }
+
+.logo {
+  max-width: 5em;
+}
