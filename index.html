@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ayers Ecommerce Website</title>
+    <title>Allure</title>
     <!-- css -->
     <link rel="stylesheet" href="index.css" />
 
@@ -14,6 +14,27 @@
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400&display=swap"
       rel="stylesheet"
     />
+
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/60922564bf.js"
@@ -60,7 +81,7 @@
         <div class="bg-green text-white banner-content">
           <h1>Charity Bracelet</h1>
           <p>
-            Our CharityBands® line of bracelets supports charities that create a
+            Our line of bracelets supports charities that create a
             positive impact on women’s and children’s issues. We donate $5 from
             the sale of each bracelet to the supported charity.
           </p>
@@ -119,32 +140,88 @@
 
     <!-- about us  -->
     <div class="main-banner-wrapper">
-      <div class="banner">
-        <div>
-          <img src="assets/banner-allure.webp" alt="" />
-        </div>
-        <div class="bg-brown text-white banner-content">
-          <h1>Charity Bracelet</h1>
+      <div>
+        
+        <div class="bg-green text-white banner-content about-us">
+          <h1>About us</h1>
           <p>
-            Our CharityBands® line of bracelets supports charities that create a
-            positive impact on women’s and children’s issues. We donate $5 from
-            the sale of each bracelet to the supported charity.
+            At Allure Bracelets, we are more than just a jewelry brand – we are
+            dedicated to making a difference in the lives of women and children.
+            Committed to the belief that fashion can be a force for good, we
+            proudly support charities that champion causes affecting women and
+            children. Our mission goes beyond crafting beautiful and meaningful
+            bracelets; it extends to creating a positive impact on the world.
           </p>
+          <p>For every bracelet sold, we contribute $5 to our supported
+            charities, ensuring that your purchase not only adds a touch of
+            elegance to your style but also contributes to meaningful change.
+            Join us in our journey to make a difference, one bracelet at a time.
+            Explore our collection, wear your values, and become a part of the
+            Allure Bracelets community that stands for empowerment, compassion,
+            and positive change</p>
         </div>
       </div>
     </div>
     <div class="main-banner-wrapper">
       <div class="banner">
         <div class="bg-brown text-white banner-content">
-          <h1>Charity Bracelet</h1>
-          <p>
-            Our CharityBands® line of bracelets supports charities that create a
-            positive impact on women’s and children’s issues. We donate $5 from
-            the sale of each bracelet to the supported charity.
-          </p>
+          <h1>Location</h1>
+          <p>you can find our products in store below</p>
+          <ul>
+            <li>
+              <a href="" class="text-white"
+                >1/5 Spencer St, Melbourne VIC 3008</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-white"
+                >270 Flinders St, Melbourne VIC 3000</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-white">140 King St, Melbourne VIC 3000</a>
+            </li>
+            <li>
+              <a href="" class="text-white"
+                >Power Street Reserve, 8 Whiteman St, Southbank VIC 3006</a
+              >
+            </li>
+          </ul>
+
+          <img src="assets/Melbourne.png" alt="melbourne map" />
         </div>
-        <div>
-          <img src="assets/banner-allure.webp" alt="" />
+        <div class="bg-brown text-white banner-content">
+          <h1 class="capitalized">get in touch</h1>
+          <p>
+            Stay Connected – Reach Out to Us Today for Inquiries,
+            Collaborations, or Just a Friendly Chat!
+          </p>
+          <br />
+          <div class="contact-form">
+            <form action="#" method="post">
+              <label for="firstName">First Name:</label>
+              <input type="text" id="firstName" name="firstName" required />
+
+              <label for="lastName">Last Name:</label>
+              <input type="text" id="lastName" name="lastName" required />
+
+              <label for="contactNumber">Contact Number:</label>
+              <input
+                type="tel"
+                id="contactNumber"
+                name="contactNumber"
+                required
+              />
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="messages">Message:</label>
+              <textarea id="messages" name="messages" required></textarea>
+
+              <button type="submit">Submit</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -157,11 +234,6 @@
           <li>shipping & return</li>
           <li>contact us</li>
           <li>FAQ</li>
-          <li>Sales guide</li>
-          <li>Retailers</li>
-          <li>Wholesale</li>
-          <li>Afterpay</li>
-          <li>Legal & Privacy</li>
         </ul>
       </div>
 
@@ -182,6 +254,7 @@
         </ul>
       </div>
     </footer>
+    <div class="bg-brown copy-right"><p>&copy Allure 2024</p></div>
 
     <script type="module" src="script/index.js"></script>
   </body>

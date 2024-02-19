@@ -22,7 +22,7 @@ export function renderPaymentSummary() {
     const totalCents = totalBeforeTax + taxCents
 
     const paymentSummaryHTML = `
-    <div class="payment-samurry-title text-gold capitalized">
+    <div class="payment-samurry-title text-green uppercase">
             order summary
           </div>
           <div class="payment-summary-row">
@@ -46,7 +46,7 @@ export function renderPaymentSummary() {
             <div>Order total</div>
             <div class="payment-summary-money">$${formatCurrency(totalCents)}</div>
           </div>
-          <button class="place-order-button">place your order</button>
+          <button class="place-order-button add-to-cart-button">place your order</button>
     
     `
 
