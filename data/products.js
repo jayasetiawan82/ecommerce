@@ -52,7 +52,7 @@ export const products = [{
   keywords: ["shirt", "G'day"]
 }, { 
   id: "45576799909",
-  image:"assets/bracelet-5.jpg",
+  image:"assets/Twist-Leather-Bracelet.jpg",
   name: "You Beuaty",
   rating: {
       stars: 5,

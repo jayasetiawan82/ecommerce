@@ -2,16 +2,7 @@ export let cart = JSON.parse(localStorage.getItem("cart"));
 
 if (!cart) {
   cart = [
-    {
-      productId: "shirt22389",
-      quantity: 2,
-      deliveryOptionId: "1"
-    },
-    {
-      productId: "shirt39889",
-      quantity: 3,
-      deliveryOptionId: "2"
-    },
+  
   ];
 }
 

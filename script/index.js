@@ -47,11 +47,6 @@ products.forEach((product) => {
                 </div>
 
                 <div class="product-size-selector">
-                <select class="js-quantity-selector-${product.id}">
-                    <option value="s">S</option>
-                    <option value="m">M</option>
-                    <option value="l">L</option>
-                </select>
             </div>
                 <button class="add-to-cart-button js-add-to-cart-button capitalized" data-product-id="${
                   product.id
