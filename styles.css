@@ -347,6 +347,11 @@ nav ul li a {
   transition: width .4s ease;
   -webkit-transition: width .4s ease;
 }
+
+.fa-bag-shopping {
+  font-size: 1.6em;
+  padding-right: 1em;
+}
  
 .link:hover:after{
   width: 100%;
@@ -497,7 +502,8 @@ footer div ul li {
 .payment-summary-row {
   display: flex;
   justify-content: space-between;
-  gap: 4em;
+  gap: 3em;
+  padding-right: 1em;
 }
 
 .update-quantity-link, .delete-quantity-link {
@@ -556,6 +562,22 @@ select {
   border: none;
 }
 
+@media (max-width: 45em) {
+  .checkout-grid {
+    display: grid;
+  }
+
+  .order-summary  {
+    padding: 1em 1em 0 0;
+  }
+
+  .cart-item-details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+}
+
 
 
 /* layout */
@@ -604,4 +626,18 @@ select {
 
 .contact-form button:hover {
   background-color: #f3d161;
+}
+
+/* order-confirmation page */
+
+.confirmation-wrapper {
+  text-align: center;
+  max-width: 25em;
+  margin: auto;
+  margin-top: 5em;
+  background-color: var(--clr-brown);
+  padding: 2em;
+  color: var(--clr-light);
+  border-radius: 5px;
+  
 }

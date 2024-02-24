@@ -46,8 +46,8 @@ export function renderOrderSummary() {
                   <div class="product-quantity">
                     <span class="text-gold capitalized">
                       quantity:
-                      <span class="quantity-label js-quantity-label-${matchingProduct.id}">${cartItem.quantity}</span>
-                      <span class="update-quantity-link text-dark js-update-link" data-product-id="${matchingProduct.id}">update</span>
+                      <span class="quantity-label js-quantity-label-${matchingProduct.id}">${cartItem.quantity}</span><br>
+                      <span class="update-quantity-link text-green js-update-link" data-product-id="${matchingProduct.id}">update</span>
   
                       <input class="quantity-input js-quantity-input-${matchingProduct.id}">
                       <span class="save-quantity-link js-save-link" data-product-id="${matchingProduct.id}">Save</span>
