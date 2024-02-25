@@ -315,7 +315,7 @@ select {
 header {
     justify-content: space-between;
     margin-top: 1em;
-    padding-inline: 2em;
+    padding-inline: 1em;
 }
 
 .center-header {
@@ -350,7 +350,7 @@ nav ul li a {
 
 .fa-bag-shopping {
   font-size: 1.6em;
-  padding-right: 1em;
+  padding-right: .3em;
 }
  
 .link:hover:after{
